@@ -1,4 +1,9 @@
-
+:root{
+ --bttn-backcolor: rgb(0, 120, 242);
+ --ftter-backcolor:#2e333b;
+ --teamcard-box: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+ --port-cardbox: 0px 1px 3px rgba(194, 194, 194, 0.12), 0px 1px 1px rgba(255, 243, 243, 0.14), 0px 2px 1px rgba(197, 197, 197, 0.2);
+}
 body {
    font-family: sans-serif;
 }
@@ -11,7 +16,7 @@ footer{
    margin-top: -16px;
    margin-left: -10px;
    width:101.2%;
-   background-color:#2e333b;
+   background-color:var(--ftter-backcolor);
    height:320px;
 }
 h3{
@@ -21,7 +26,7 @@ ul {
    list-style-type: none;
 }
 button {
-   background-color: rgb(0, 120, 242);
+   background-color:var(--bttn-backcolor);
    color: white;
    padding-top: 20px;
    padding-left: 45px;
@@ -47,6 +52,7 @@ header {
 
    padding-right: 45px;
 }
+
 .bold1,
 .bold2, 
 .bold3, 
@@ -97,6 +103,20 @@ margin-left: 1186px;}
    text-decoration: none;
    margin-left: 25px;
    margin-right: 25px;
+}
+.adec2 {
+   color: black;
+   text-decoration: none;
+   margin-left: 25px;
+   margin-right: 25px;
+   padding-right: 45px;
+}
+.adec12 {
+   color: black;
+   text-decoration: none;
+   margin-left: 25px;
+   margin-right: 25px;
+   font-weight: bold;
 }
 
 .adec1:hover,
@@ -269,7 +289,7 @@ width: 270px;
 height: 140.75px;
 }
 .teamcard{  
-   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+   box-shadow:var(--teamcard-box);
 
 }
 .divdown1{
@@ -291,7 +311,7 @@ padding-top:38px;
    margin-top: -178px;
    padding-top:38px;
    }
-
+.spanprtfl
 
    
 .ftblue{
@@ -457,7 +477,7 @@ background-color: #2e8ddb;
       color: grey;  
    }
 .teamcardport{  
-   box-shadow: 0px 1px 3px rgba(194, 194, 194, 0.12), 0px 1px 1px rgba(255, 243, 243, 0.14), 0px 2px 1px rgba(197, 197, 197, 0.2);
+   box-shadow: var(--port-cardbox);
    text-align:left;
 
    }
