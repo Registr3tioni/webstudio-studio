@@ -3,7 +3,17 @@
  --ftter-backcolor:#2e333b;
  --teamcard-box: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
  --port-cardbox: 0px 1px 3px rgba(194, 194, 194, 0.12), 0px 1px 1px rgba(255, 243, 243, 0.14), 0px 2px 1px rgba(197, 197, 197, 0.2);
-}
+ --divdown-port: 1px solid gray;
+ --heds-afootshover-adec: blue;
+ --adecs: black;
+ --title-afoot-hr-div1234: gray;
+ --lidivdown-mainsec: white ;
+ --bbtn-port:rgb(245,244,250);
+ --mainsecback: #212121;
+ --headmrgn: rgb(26,26,26);
+ --lowdiv:#F5F4FA;
+ --linkusya:#2e8ddb;
+ --leftp:rgb(100, 100, 100);}
 body {
    font-family: sans-serif;
 }
@@ -27,7 +37,7 @@ ul {
 }
 button {
    background-color:var(--bttn-backcolor);
-   color: white;
+   color: var(--lidivdown-mainsec);
    padding-top: 20px;
    padding-left: 45px;
    padding-right: 45px;
@@ -45,7 +55,7 @@ header {
 
 
 .heds {
-   color: blue;
+   color: var(--heds-afootshover-adec);
 }
 
 .adec2 {
@@ -78,7 +88,7 @@ margin-left: -1020px;
 .leftp2,
 .leftp3,
 .leftp4{
-   color: rgb(100, 100, 100);
+   color: var(--leftp);
 }
 .leftp1{
 margin-left: 148px;
@@ -99,20 +109,20 @@ margin-left: 1186px;}
 }
 
 .adec1 {
-   color: black;
+   color: var(--adecs);
    text-decoration: none;
    margin-left: 25px;
    margin-right: 25px;
 }
 .adec2 {
-   color: black;
+   color: var(--adecs);
    text-decoration: none;
    margin-left: 25px;
    margin-right: 25px;
    padding-right: 45px;
 }
 .adec12 {
-   color: black;
+   color: var(--adecs);
    text-decoration: none;
    margin-left: 25px;
    margin-right: 25px;
@@ -121,7 +131,7 @@ margin-left: 1186px;}
 
 .adec1:hover,
 .adec2:hover {
-   color: blue;
+   color: var(--heds-afootshover-adec);
 }
 
 
@@ -136,7 +146,7 @@ span,
 
 .ulhead2 {
    margin-left: 235px;
-   color: grey
+   color: var(--heds-afootshover-adec)
 }
 
 .ulhead1 {
@@ -151,7 +161,7 @@ span,
 .headmrgn {
    margin-right: 55px;
    margin-left: 223px;
-   color:rgb(26, 26, 26);
+   color:var(--headmrgn);
    text-decoration: none;
 }
 
@@ -159,8 +169,8 @@ span,
 .mainsec {
    align-items: center;
    text-align: center;
-   background-color: #212121;
-   color: white;
+   background-color: var(--mainsecback);
+   color: var(--lidivdown-mainsec);
    margin-top: 16px;
    margin-left: -10px;
    position: absolute;
@@ -220,7 +230,7 @@ margin-left: 165px;
 .div2,
 .div3,
 .div4{
-color:grey
+color:var(--heds-afootshover-adec)
 }
 .img1,
 .img2,
@@ -238,7 +248,7 @@ color:grey
    margin-left: 125px;
 }
 .lowdiv{
-background-color: #F5F4FA;
+background-color: var(--lowdiv);
 width: 101.2%;
 height: 923px;
 text-align: center;
@@ -283,7 +293,7 @@ text-align: center;
 .divdown3,
 .divdown4{
 text-align: center;
-background-color: white;
+background-color: var(--lidivdown-mainsec);
 padding-top:5px;
 width: 270px;
 height: 140.75px;
@@ -315,7 +325,7 @@ padding-top:38px;
 
    
 .ftblue{
-   color:blue;
+   color: var(--heds-afootshover-adec);
 }
 
 .ftpad{
@@ -328,36 +338,36 @@ margin-left: 120px;
    font-weight: 700;
    font-size: 26px;
    line-height: 1.19;
-   color: white;
+   color: var(--lidivdown-mainsec);
    margin-left: 77px;
 
 }
 .linkusya{
-   color:white;
+   color:var(--lidivdown-mainsec);
    margin-left: 157px;
    margin-top: 145.5px;
    position: absolute;
 }
 .linkusya:hover{
-   color:#2e8ddb; 
+   color:var(-linkusya); 
 }
 .afoot1{
-color:gray;
+color:var(--heds-afootshover-adec);
 margin-left: 157px;
 margin-top: 163px;
 position: absolute;
 }
 .afoot2{
-   color:gray;
+   color:var(--heds-afootshover-adec);
    margin-left: 157px;
    margin-top: 177.5px;
    position: absolute;
    }
 .afoot1:hover{
-   color:blue;
+   color: var(--heds-afootshover-adec);
    }
 .afoot2:hover{
-   color:blue;
+   color: var(--heds-afootshover-adec);
    }
  
 
@@ -366,7 +376,7 @@ position: absolute;
 hr{
 margin-top: 25px;
 width: 100%;
-color: gray;
+color: var(--heds-afootshover-adec);
 }
 .headerport{
 padding-top: 6.5px;
@@ -377,12 +387,12 @@ left: 24%;
 position: absolute;
 }
 .btnportfl{
-background-color: rgb(245,244,250);
-color: black;
+background-color: var(--bbtn-port);
+color: var(--adecs);
 font-weight: bold;
 }
 .btnportfl:hover{
-background-color: #2e8ddb;
+background-color:var(--bttn-backcolor);
 }
 .mainport{
    margin-top: 180px;
@@ -395,7 +405,7 @@ background-color: #2e8ddb;
 .divdown3port
 {
    text-align: left;
-   border: 1px solid gray;
+   border: var(--divdown-port);
    padding-top:5px;
    width: 269px;
    height: 140.75px;
@@ -430,7 +440,7 @@ background-color: #2e8ddb;
 .divdown3_2port
 {
    text-align: left;
-   border: 1px solid gray;
+   border: var(--divdown-port);
    padding-top:5px;
    width: 269px;
    height: 140.75px;
@@ -468,13 +478,13 @@ background-color: #2e8ddb;
    .titleportp{
       text-align: left;
       padding-left: 5px;
-      color: grey;  
+      color: var(--heds-afootshover-adec);  
    }
    .titleportp1{
       text-align: left;
       padding-left: 5px;
       margin-top: -10px;
-      color: grey;  
+      color: var(--heds-afootshover-adec);  
    }
 .teamcardport{  
    box-shadow: var(--port-cardbox);
