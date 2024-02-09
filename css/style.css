@@ -117,10 +117,7 @@ header {
 
    padding-right: 45px;
 }
-.head_ul_li2_2 {
 
-   padding-right: 35px;
-}
 
 .ul_li1_h3,
 .ul_li2_h3, 
@@ -226,7 +223,7 @@ span,
 }
 
 .head_ul2 {
-   margin-left: 235px;
+   margin-left: 155px;
    color: var(--heds-afootshover-adec);
     
    font-weight: 500;
@@ -392,7 +389,7 @@ text-align: center;
 }
 .section3_img1_div,
 .section3_img2_div2,
-.section3_img3_div4,
+.section3_img3_div3,
 .section3_img4_div4{
 text-align: center;
 background-color: var(--lidivdown-mainsec);
@@ -413,7 +410,7 @@ margin-left: 457.7px;
 margin-top: -178px;
 padding-top:38px;
    }
-.section3_img3_div4{
+.section3_img3_div3{
    margin-left: 803.7px;
    margin-top: -178px;
    padding-top:38px;
@@ -446,7 +443,7 @@ a.foot_link2{
 .foot_link2{
    color:var(--lidivdown-mainsec);
    margin-left: 157px;
-   margin-top: 99.5px;
+   margin-top: 100.5px;
    position: absolute;
 
 }
