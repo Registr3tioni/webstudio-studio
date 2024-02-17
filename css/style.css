@@ -39,7 +39,9 @@ footer{
    background-color:var(--ftter-backcolor);
    height:252px;
 }
-
+.company_details{
+   padding-top: 680px;
+}
 
 .main_h2_down1 {
    margin-top: 160px;
