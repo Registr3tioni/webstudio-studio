@@ -15,8 +15,8 @@
    --site-logo-black: rgb(26, 26, 26);
    --link: #2e8ddb;
    --about-company: rgb(100, 100, 100);
-   --options-buttons-color: #212121;
-   --options-color: #FFFFFF;
+   --portfolio-buttons-color: #212121;
+   --button-item-color: #FFFFFF;
    --other-color: rgba(255, 255, 255, 0.6);
    --header-border: rgba(236, 236, 236, 1);
    --header-comunication: rgba(117, 117, 117, 1);
@@ -95,13 +95,13 @@ body {
 }
 
 .logo-white {
-   color: var(--options-color);
+   color: var(--button-item-color);
 }
 
 
-.options {
+.button-item {
    margin-top: 0px;
-
+   display: flex;
 }
 
 
@@ -259,22 +259,19 @@ button:hover {}
    letter-spacing: 4px;
    font-style: normal;
 }
-
-.main-ul-portfol {
-   top: 125px;
-   left: 20%;
-   position: absolute;
-
-   font-size: 16px;
-
-
-   line-height: 26px;
-   letter-spacing: 0.03em;
-   text-align: center;
-   color: var(--options-buttonss-color);
-
+.portfolio-section{
+   padding: 94px 0px 94px 0px;
 }
-
+.button-list {
+   display: flex;
+   gap: 8px;
+   justify-content: center;
+   padding-bottom: 16px;
+   margin-bottom: 34px;
+}
+/* .button-item:not(:last-child){
+margin-right: 8px;
+} */
 
 
 .features-item-title {
@@ -369,7 +366,19 @@ button:hover {}
    font-size: 45px;
    text-align: center;
 }
-
+.portfolio-buttons{
+   padding: 10px 32px;
+   border-radius: 4px;
+   border: none;
+   font-family: Roboto;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 30px;
+   letter-spacing: 0.06em;
+   text-align: center;
+   background-color: var(--web-site-logo);
+   color: var(--white-color);
+}
 
 .main-div {
    position: relative;
@@ -617,70 +626,10 @@ a.location {
    margin-left: 16%;
 }
 
-.offer-div1,
-.offer-div2,
-.offer-div3,
-.offer-div4,
-.offer-div5,
-.offer-div6 {
+.offer-div {
    text-align: left;
    border: var(--divdown-portfol-border);
-   padding-top: 5px;
-   width: 349px;
-   height: 140.75px;
-   margin-bottom: 10px;
-   padding-left: 20px;
-}
-
-.offer-div1 {
-
-   padding-top: 290px;
-   margin-left: -85px;
-   margin-bottom: 55px;
-   padding-bottom: -95px;
-   height: 99px;
-}
-
-.offer-div2 {
-   padding-top: 38px;
-   margin-left: 328px;
-   margin-top: -195px;
-   height: 104.75px;
-}
-
-.offer-div3 {
-   margin-left: 736px;
-   margin-top: -212px;
-   padding-top: 99px;
-   padding-bottom: -26px;
-   height: 101.75px;
-}
-
-.offer-div4 {
-
-   padding-top: 290px;
-   margin-left: -84px;
-   margin-bottom: 55px;
-   padding-bottom: -25px;
-   height: 100px;
-   margin-top: 50px;
-}
-
-.offer-div5 {
-   padding-top: 59px;
-   margin-left: 328px;
-   margin-top: -219px;
-   height: 100.75px;
-
-}
-
-.offer-div6 {
-   margin-left: 736px;
-   margin-top: -212px;
-   padding-top: 99px;
-
-   padding-bottom: -26px;
-   height: 101.75px;
+   padding: 20px 24px;
 }
 
 .offer-name {
@@ -696,70 +645,31 @@ a.location {
 .offer-specialization {
    text-align: left;
    color: var(--offer-color);
-
-   margin-top: -10px;
-
+   padding-top: 4px;
    font-style: normal;
 
 }
 
-.offers {
-   box-shadow: var(--portfol-cardbox-shadow);
-   text-align: left;
-}
-
-.offer-img1,
-.offer-img2,
-.offer-img3,
-.offer-img4,
-.offer-img5,
-.offer-img6 {
+.offers-item {
+/* flex-basis: calc(); */
    width: 370px;
-   height: 294px;
-   position: absolute;
+ display: flex;
+ flex-direction: column;
+
+ box-shadow: var(--portfol-cardbox-shadow);
 }
+.offers-list {
 
-.offer-img1,
-.offer-img4 {
-   margin-left: -702.5px;
-
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
 }
-
-.offer-img2 {
-   margin-top: -446px;
-   margin-left: -289.8px;
-
-}
-
-.offer-img3 {
-   margin-top: -400px;
-   margin-left: 118.2px;
-}
-
-.offer-img4 {
-   margin-top: 40px;
-}
-
-.offer-img5 {
-   margin-top: -446px;
-   margin-left: -289.9px;
-
-}
-
-.offer-img6 {
-   margin-top: -399px;
-   margin-left: 118.2px;
-}
-
-.offers-marginbottom-portfol {
-   margin-bottom: 75px;
-}
-
+.offers-item
 a:link {
    text-decoration: none;
 }
 
-.options-hover-back:hover {
+.button-item-hover-back:hover {
    background-color: var(--bttn-backcolor);
-   color: var(--options-color);
+   color: var(--button-item-color);
 }
