@@ -14,6 +14,7 @@
    --main-section-back: #212121;
    --site-logo-black: rgb(26, 26, 26);
    --link: #2e8ddb;
+   --features-img-back: F5F4FA;
    --about-company: rgb(100, 100, 100);
    --portfolio-buttons-color: #212121;
    --button-item-color: #FFFFFF;
@@ -66,10 +67,11 @@ body {
    margin-right: 46px;
 }
 
-.header{
+.header {
    padding-top: 24px;
    padding-bottom: 25px;
 }
+
 .navigation {
    margin-right: 344px;
 }
@@ -140,7 +142,7 @@ hr {
    line-height: 16px;
    font-size: 14px;
    text-align: left;
-  padding-top: 10px;
+   padding-top: 10px;
 }
 
 .nav-link:hover,
@@ -259,9 +261,11 @@ button:hover {}
    letter-spacing: 4px;
    font-style: normal;
 }
-.portfolio-section{
+
+.portfolio-section {
    padding: 94px 0px 94px 0px;
 }
+
 .button-list {
    display: flex;
    gap: 8px;
@@ -278,7 +282,7 @@ button:hover {}
    line-height: 24px;
    letter-spacing: 0.03em;
    text-align: left;
-   display: inline;
+
 }
 
 .features-item-text {
@@ -291,16 +295,33 @@ button:hover {}
 }
 
 .features-list {
-   display: inline-block;
+   display: flex;
    /* padding-left: 215px; */
 }
 
 .features-item {
 
-   display: inline-block;
    width: 270px;
 }
 
+.features-item:nth-child(1)::before {
+   content: "";
+   background: var(--features-img-back) url("antenna.png");
+}
+
+.features-item:nth-child(2)::before {
+   background: url("clock.png") var(--features-img-back);
+
+}
+
+.features-item:nth-child(3)::before {
+   background: url("diagram.png") var(--features-img-back);
+}
+
+.features-item:nth-child(4)::before {
+   background-image: url("astronaut.png") var(--features-img-back);
+
+}
 
 
 
@@ -314,7 +335,7 @@ button:hover {}
 
 
 .company-links {
-   display: inline;
+   display:flex;
 }
 
 .site-logo {
@@ -364,7 +385,8 @@ button:hover {}
    font-size: 45px;
    text-align: center;
 }
-.portfolio-buttons{
+
+.portfolio-buttons {
    padding: 10px 32px;
    border-radius: 4px;
    border: none;
@@ -375,15 +397,17 @@ button:hover {}
    letter-spacing: 0.06em;
    text-align: center;
    background-color: var(--bbtn-portfol);
- color: var(--nav-link)
+   color: var(--nav-link)
 }
-.portfolio-buttons:hover{
+
+.portfolio-buttons:hover {
    background-color: var(--web-site-logo);
    color: var(--white-color);
 }
+
 .main-div {
    position: relative;
-   display: inline-block;
+   display: flex;
 
    left: 320px;
 }
@@ -423,30 +447,6 @@ button:hover {}
 }
 
 
-/* .flex {
-   display: flex;
-   flex-flow: row nowrap;
-   align-content: center;
-   align-items: center;
-
-} */
-
-.flex p:nth-child(1) {
-   padding-left: 13%;
-}
-
-.flex p:nth-child(2) {
-   padding-left: 6.1%;
-}
-
-.flex p:nth-child(3) {
-   padding-left: 4.1%;
-}
-
-.flex p:nth-child(4) {
-   padding-left: 3.5%;
-}
-
 
 .visually-hidden {
    display: none;
@@ -480,34 +480,19 @@ button:hover {}
 
 /* .team-item-spealization, */
 .team-item {
-
+   display: flex;
+   flex-direction: column;
    height: 368px;
    font-size: 16px;
    font-weight: 400;
    line-height: 18.75px;
    letter-spacing: 0.03em;
-   /* padding-top: ; */
    background-color: var(--white-color);
-   display: inline-block;
+
    width: 270px;
    box-shadow: var(--team-item-box-shadow);
 }
 
-/* .team-item:nth-child(1) {
-   margin-left: 175px;
-}
-
-.team-item:nth-child(2) {
-   margin-left: 30px;
-}
-
-.team-item:nth-child(3) {
-   margin-left: 30px;
-}
-
-.team-item:nth-child(4) {
-   margin-left: 30px;
-} */
 
 .team-name {
    font-size: 16px;
@@ -547,13 +532,13 @@ a.location {
    color: var(--white-color);
    margin-left: 157px;
    margin-top: 76.5px;
-   position: absolute;
+
 
 }
 
 .footer-site-logo-web {
    color: var(--link);
-   position: absolute;
+
    padding-left: 192px;
 
    font-weight: 700;
@@ -566,7 +551,7 @@ a.location {
 
 .footer-studio-web {
    padding-top: 9px;
-   position: absolute;
+
    padding-left: 252px;
    line-height: 30.52px;
    color: var(--white-color);
@@ -579,7 +564,7 @@ a.location {
 .location {
    margin-left: 157px;
 
-   position: absolute;
+
    line-height: 24px;
    font-size: 14px;
    letter-spacing: 0.03em;
@@ -588,7 +573,7 @@ a.location {
 .e-mail {
    margin-left: 157px;
    margin-top: 105px;
-   position: absolute;
+
    line-height: 24px;
    font-size: 14px;
    letter-spacing: 0.03em;
@@ -652,20 +637,21 @@ a.location {
 }
 
 .offers-item {
-flex-basis: calc((100% - 60px) / 3);
- display: flex;
- flex-direction: column;
+   flex-basis: calc((100% - 60px) / 3);
+   display: flex;
+   flex-direction: column;
 
- box-shadow: var(--portfol-cardbox-shadow);
+   box-shadow: var(--portfol-cardbox-shadow);
 }
+
 .offers-list {
 
    display: flex;
    flex-wrap: wrap;
    gap: 30px;
 }
-.offers-item
-a:link {
+
+.offers-item a:link {
    text-decoration: none;
 }
 
