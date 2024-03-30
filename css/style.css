@@ -269,9 +269,7 @@ button:hover {}
    padding-bottom: 16px;
    margin-bottom: 34px;
 }
-/* .button-item:not(:last-child){
-margin-right: 8px;
-} */
+
 
 
 .features-item-title {
@@ -376,10 +374,13 @@ margin-right: 8px;
    line-height: 30px;
    letter-spacing: 0.06em;
    text-align: center;
+   background-color: var(--bbtn-portfol);
+ color: var(--nav-link)
+}
+.portfolio-buttons:hover{
    background-color: var(--web-site-logo);
    color: var(--white-color);
 }
-
 .main-div {
    position: relative;
    display: inline-block;
@@ -654,7 +655,9 @@ a.location {
 flex-basis: calc((100% - 60px) / 3);
  display: flex;
  flex-direction: column;
+
  box-shadow: var(--portfol-cardbox-shadow);
+}
 .offers-list {
 
    display: flex;
