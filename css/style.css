@@ -23,7 +23,8 @@
    --header-comunication: rgba(117, 117, 117, 1);
    --employers-name: #212121;
    --nav-link: rgba(33, 33, 33, 1);
-
+   --portfolio-shadows: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+   
 }
 
 body {
@@ -161,8 +162,7 @@ hr {
    line-height: 16px;
    font-size: 14px;
    text-align: left;
-   padding-top: 10px;
-}
+   padding-top: 10px;}
 
 .nav-link {
    color: var(--nav-link);
@@ -174,12 +174,19 @@ hr {
    text-align: left;
    padding-top: 10px;
 }
-
+.contacts-link,
+.nav-link,
+.footer-link{
+font-weight: 500;
+}
 .nav-link:hover,
 .contacts-link:hover {
-   color: var(--web-site-logo);
+   color: var();
 }
-
+.nav-link:active,
+.contacts-link:active{
+color: var(--web-site-logo);
+}
 /* Footer */
 .footer {
    background-color: var(--ftter-backcolor);
@@ -404,9 +411,10 @@ button:hover {}
    color: var(--nav-link)
 }
 
-.portfolio-buttons:hover {
+.portfolio-buttons:active {
    background-color: var(--web-site-logo);
    color: var(--white-color);
+   box-shadow: var(--portfolio-shadows);
 }
 
 .activities-item {
