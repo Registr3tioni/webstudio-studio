@@ -611,8 +611,13 @@ a.location {
 
 .offer-div {
    text-align: left;
-   border: var(--divdown-portfol-border);
+   border-bottom: var(--divdown-portfol-border);
+   border-right: var(--divdown-portfol-border);
+   border-left: var(--divdown-portfol-border);
    padding: 20px 24px;
+}
+.offer-div:hover{
+   box-shadow: var(--portfol-cardbox-shadow);
 }
 
 .offer-name {
@@ -638,7 +643,7 @@ a.location {
    display: flex;
    flex-direction: column;
 
-   box-shadow: var(--portfol-cardbox-shadow);
+
 }
 
 .offers-list {
