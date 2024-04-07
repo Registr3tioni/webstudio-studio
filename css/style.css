@@ -31,7 +31,11 @@ body {
    font-family: "Roboto", 'sans-serif';
    font-size: 400
 }
-
+.main-container {
+   width: 1600px;
+   margin: 0 auto;
+   outline: 1px dashed tomato;
+}
 .container {
    width: 1200px;
    margin: 0 auto;
