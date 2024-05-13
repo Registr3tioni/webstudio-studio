@@ -201,11 +201,11 @@ hr {
    margin-right: 10px;
 }
 
-.nav-link:active,
-.contacts-link:active {
+.nav-link:hover,
+.contacts-link:hover {
    color: var(--web-site-logo);
 }
-.contacts-item:active
+.contacts-item:hover
 .contacts-img
 .contacts-use {
    fill: var(--web-site-logo);
