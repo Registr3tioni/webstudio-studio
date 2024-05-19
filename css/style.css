@@ -434,17 +434,16 @@ ul.footer-list {
    display: flex;
    justify-content: space-around;
    align-items: center;
-   top: 224px;
+   position: absolute;
+   bottom: 0;
    height: 70px;
    width: 100%;
-   position: absolute;
    font-weight: 700;
    font-size: 14px;
    letter-spacing: 0.03em;
    text-transform: uppercase;
    color: var(--features-img-back);
    background-color: var(--activities-back);
-   z-index: 1;
 }
 
 .activities-item:not(:last-child) {
