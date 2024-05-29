@@ -23,7 +23,7 @@
                 <nav class="navigation">
                     <a class="logo" href="#">Web<span class="logo-dark">Studio</span></a>
                     <ul class="nav-list">
-                        <li class="nav-item"><a class="nav-link" href="./index.html">Студія</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">Студія</a></li>
                         <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
                         <li class="nav-item"><a class="nav-link" href="./">Контакти</a></li>
                     </ul>
@@ -56,20 +56,20 @@
                         ВАШОГО БІЗНЕСУ
                     </h1>
                     <button class="hero-title-buttons" data-modal-open>Замовити послугу</button>
-                    <div class="backdrop" data-modal="">
+                    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal-close-btn" data-modal-close="">
-                <svg class="close-btm-icon" width="18" height="18">
-                    <use href="./images/icon-close-btn"></use>
+            <button class="modal-close-btn" data-modal-close>
+                <svg class="close-btn-icon" width="18" height="18">
+                    <use href="./images/symboldefs.svg#close-button"></use>
                 </svg>              
             </button>
-            <p class="modal-title">Залиште свої дані, ми тобі зателефонуємо</p>
+            <p class="modal-title">Залиште свої дані, ми вам зателефонуємо</p>
             <div class="modal-field">
                 <label class="modal-label">Ім'я</label>
                 <div class="modal-input-wrap">
                     <input class="modal-input" type="text" id="user-name">
                     <svg class="input-icon" width="18" height="18">
-                        <use href="./images/vectoruser.svg"></use>
+                        <use href="./images/symboldefs.svg#user-icon-drop"></use>
                     </svg>
                 </div>
             </div>
@@ -78,7 +78,7 @@
                 <div class="modal-input-wrap">
                     <input class="modal-input" type="tel" id="user-tel">
                     <svg class="input-icon" width="18" height="18">
-                        <use href="./images/vectorphone.svg" ></use>
+                        <use href="./images/symboldefs.svg#phone-drop"></use>
                     </svg>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                 <div class="modal-input-wrap">
                     <input class="modal-input" type="email" id="user-email">
                     <svg class="input-icon" width="18" height="18">
-                        <use href="./images/vectormail.svg"></use>
+                        <use href="./images/symboldefs.svg#mail-drop"></use>
                     </svg>
                 </div>
             </div>
@@ -96,7 +96,7 @@
                 <textarea class="user-comment" name="user-comment" id="user-comment" placeholder="Введіть текст"></textarea>
             </div>
             <div class="accept-box">
-                <input class="input-accept visually-hidden" type="checkbox"  >
+                <input class="input-accept" type="checkbox" >
                 <label class="label-accept"> Погоджуюсь с розсилкою і приймаю<a href="" class="accept-link">Умови договору</a></label>
             </div>
             <button class="btn-submit" type="submit">Відправити</button>
@@ -472,6 +472,20 @@
                         </ul>
                     </section>
                 </div>
+                <div class="container-address">
+                    <section class="footer-networks">
+                        <h2 class="join-title">Підпишіться на розсилку</h2>
+                        <div class="subscription-div">
+                            <input class="subscription-input" type="email" id="subscribe-email" placeholder="E-mail">
+                    <button class="btn-submit-subscription">
+                        Надіслати
+                        <svg width="24px" height="24px">
+                            <use href="./images/symboldefs.svg#send-button"></use>
+                        </svg>
+                    </button>
+                    </div>  
+                    </section>
+                
             </div>
         </footer>
     </div>
