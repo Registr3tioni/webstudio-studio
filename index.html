@@ -472,21 +472,20 @@
                         </ul>
                     </section>
                 </div>
-                <div class="container-address">
-                    <section class="footer-networks">
-                        <h2 class="join-title">Підпишіться на розсилку</h2>
-                        <div class="subscription-div">
-                            <input class="subscription-input" type="email" id="subscribe-email" placeholder="E-mail">
-                    <button class="btn-submit-subscription">
-                        Надіслати
-                        <svg width="24px" height="24px">
-                            <use href="./images/symboldefs.svg#send-button"></use>
-                        </svg>
-                    </button>
-                    </div>  
-                    </section>
-                
-            </div>
+                <div class="container-subscription">
+					<p class="subscription-text">Підпишіться на розсилку</p>
+					<form class="subscription-form">
+						<label class="subscription-label">
+							<input class="subscription-field" type="email" name="user_mail" placeholder="E-mail">
+						</label>
+						<button class="subscription-btn" type="submit">
+							Підписатися
+							<svg class="subscription-icon" width="24" height="24">
+								<use href="./images/symboldefs.svg#send-button"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
         </footer>
     </div>
     <script src="./js/modal.js"></script>
